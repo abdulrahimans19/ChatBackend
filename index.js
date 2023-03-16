@@ -26,7 +26,7 @@ export const openai = new OpenAIApi(configuration);
 app.use("/openai", openAiRoutes);
 app.use("/auth", authRoutes);
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log("started backend");
 });
